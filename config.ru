@@ -1,10 +1,3 @@
-[code lang="ruby"]
-gem 'rack-rewrite', '~> 1.0.0'
-require 'rubygems'
-require 'rack'
-require 'rack/rewrite'
-require 'thin'
-
 use Rack::Static,
   :urls => ["/stylesheets", "/images", "/calendar.html"],
   :root => "public"
