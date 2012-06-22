@@ -56,3 +56,11 @@ function bmlNoDropbox(event) {
   head.insertBefore( tag, head.firstChild );
 }
 
+$j('#consolidation_examples_button_1').click(function() {
+  $j('#consolidation_examples_button_1').addClass('active');
+  $j('#consolidation_examples_button_2').removeClass('active');
+  $j('#consolidation_examples_button_3').removeClass('active');
+  $j('#consolidation_examples_image_1').show();
+  $j('#consolidation_examples_image_2').hide();
+  $j('#consolidation_examples_image_3').hide();
+});

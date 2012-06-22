@@ -17,7 +17,7 @@ time, mark, audio, video {
   font-size:100%;
   vertical-align:baseline;
   background:transparent;
-  /*border: solid 1px black;*/
+  /* border: solid 1px black; */
 }                  
 
 article, aside, details, figcaption, figure,
@@ -60,12 +60,37 @@ nav ul li {
   margin: 12px 40px;
 }
 
+#left, #right {
+  width: 504px;
+  display: inline-block;
+}
+
+#left {
+  vertical-align: top;
+}
+
+#right {
+  vertical-align: top;
+}
+
+.center {
+  text-align: center;
+}
+
 blockquote, q { quotes:none; }
 
 blockquote:before, blockquote:after,
 q:before, q:after { content:''; content:none; }
 
 a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; text-decoration: none; }
+
+a .blue_link { color: blue; }
+
+/* a:hover, a:active, a:visited { outline: none; } */
+
+nav a { color: black; }
+
+p a { color: blue; }
 
 ins { background-color:#ff9; color:#000; text-decoration:none; }
 
@@ -91,12 +116,6 @@ select, input, textarea, button { font:99% sans-serif; }
  */
 pre, code, kbd, samp { font-family: monospace, sans-serif; }
  
-
-/* 
- * minimal base styles 
- */
-
-
 body, select, input, textarea { 
   /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */ 
   color: #444; 
@@ -110,14 +129,6 @@ h1,h2,h3,h4,h5,h6 { font-weight: bold; }
 
 /* always force a scrollbar in non-IE */ 
 html { overflow-y: scroll; }
-
- 
-/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
-a:hover, a:active { outline: none; }
-
-a, a:active, a:visited { color: black; }
-a:hover { color: #036; }
-
 
 ul, ol { margin-left: 1.8em; }
 ol { list-style-type: decimal; }
@@ -184,16 +195,10 @@ a:link { -webkit-tap-highlight-color: #FF5E99; }
 /* make buttons play nice in IE:    
    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
 button {  width: auto; overflow: visible; }
- 
+
 /* bicubic resizing for non-native sized IMG: 
    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
 .ie7 img { -ms-interpolation-mode: bicubic; }
-
-
-
-/* 
- * Non-semantic helper classes 
- */
 
 /* for image replacement */
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
