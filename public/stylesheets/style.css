@@ -34,6 +34,11 @@ img[id="banner"] {
   width: 1100px;
 }
 
+img[id="map"] {
+  margin: 10px auto;
+  width: 500px;
+}
+
 nav ul { list-style:none; }
 
 nav {
